@@ -3,90 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#173f34" />
+  <meta name="theme-color" content="#f6f4ef" />
   <title>Guía de Cuidados | Objeto Vivo</title>
   <meta name="description" content="Guías de cuidado para acompañar tus plantas Objeto Vivo durante todo el año." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- GitHub Pages deployment trigger -->
-  <header class="site-header">
+  <header class="site-header ov-header">
     <a class="brand" href="index.html" aria-label="Objeto Vivo - Guía de cuidados">
-      <span class="brand-name">OBJETO VIVO</span>
-      <span class="brand-sub">NATURALEZA &amp; DISEÑO</span>
+      <span class="brand-mark" aria-hidden="true">◒</span>
+      <span class="brand-copy"><span class="brand-name">Objeto Vivo</span><span class="brand-sub">NATURALEZA &amp; DISEÑO</span></span>
     </a>
-    <a class="shop-link" href="https://objetovivo.com.ar/shop/" target="_blank" rel="noopener">Tienda ↗</a>
+    <nav class="header-nav" aria-label="Navegación principal">
+      <a href="#guias">Guías</a>
+      <a href="https://objetovivo.com.ar/shop/" target="_blank" rel="noopener">Productos</a>
+      <a href="https://objetovivo.com.ar/sobre-nosotros/" target="_blank" rel="noopener">Sobre nosotros</a>
+    </nav>
+    <a class="shop-pill" href="https://objetovivo.com.ar/shop/" target="_blank" rel="noopener">Tienda ↗</a>
   </header>
 
   <main>
-    <section class="hero home-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">GUÍA VIVA</p>
-        <h1>Tu planta, bien cuidada<br><em>todo el año.</em></h1>
-        <p class="hero-text">Una guía simple y cercana para entender qué necesita tu planta en cada estación, reconocer sus señales y ayudarla a crecer en tu espacio.</p>
-        <a class="button primary" href="#guias">Explorar guías</a>
+    <section class="ov-hero">
+      <div class="ov-hero-media">
+        <img src="https://objetovivo.com.ar/wp-content/uploads/2026/06/6b311ffb-a500-49eb-aa3c-b40d3970d5c7-600x800.jpg" alt="Planta de Objeto Vivo" />
       </div>
-      <div class="hero-image-wrap">
-        <img class="hero-image" src="https://objetovivo.com.ar/wp-content/uploads/2026/06/6b311ffb-a500-49eb-aa3c-b40d3970d5c7-600x800.jpg" alt="Anturium borgoña de Objeto Vivo" />
-        <div class="image-note">Cuidar también es diseñar.</div>
+      <div class="ov-hero-copy">
+        <p class="ov-kicker">NATURALEZA &amp; DISEÑO 🌿</p>
+        <h1>Guía de cuidados<br>para tu <span>Objeto Vivo.</span></h1>
+        <p class="hero-text">Una guía simple para entender qué necesita tu planta, cómo cuidarla durante cada estación y cómo reconocer sus señales.</p>
+        <a class="ov-button" href="#guias">Explorar guías</a>
       </div>
     </section>
 
-    <section class="intro-strip" aria-label="Cómo funciona">
-      <div><span>01</span><p>Escaneá el QR de tu planta.</p></div>
-      <div><span>02</span><p>Encontrá sus cuidados específicos.</p></div>
-      <div><span>03</span><p>Acompañala en cada estación.</p></div>
+    <section class="ov-value">
+      <article><span>01</span><h3>Escaneá</h3><p>Usá el QR que acompaña a tu planta.</p></article>
+      <article><span>02</span><h3>Aprendé</h3><p>Encontrá sus cuidados específicos y problemas frecuentes.</p></article>
+      <article><span>03</span><h3>Acompañá</h3><p>Adaptá el cuidado a cada estación del año.</p></article>
     </section>
 
-    <section class="guides-section" id="guias">
-      <div class="section-heading">
-        <p class="eyebrow">NUESTRAS GUÍAS</p>
+    <section class="ov-guides" id="guias">
+      <div class="ov-section-head">
+        <p class="ov-kicker">GUÍAS DE CUIDADO</p>
         <h2>Conocé mejor<br>lo que vive con vos.</h2>
+        <p>Empezamos con una de las especies de la colección actual de Objeto Vivo.</p>
       </div>
 
-      <div class="plant-grid">
-        <a class="plant-card featured" href="anturium-borgona.html">
-          <div class="plant-card-image">
-            <img src="https://objetovivo.com.ar/wp-content/uploads/2026/06/22f54f61-b2d0-4607-a6c6-55fb208a594e-600x800.jpg" alt="Anturium borgoña" />
-            <span class="status">Guía disponible</span>
-          </div>
-          <div class="plant-card-copy">
-            <p class="plant-type">Interior · Floración</p>
-            <h3>Anturium Borgoña</h3>
-            <p>Brillante, elegante y expresivo. Descubrí cómo acompañar su floración y mantener su follaje saludable.</p>
-            <span class="text-link">Ver guía completa →</span>
-          </div>
-        </a>
-
-        <div class="coming-soon">
-          <p class="eyebrow">MUY PRONTO</p>
-          <h3>Más guías de la colección Objeto Vivo.</h3>
-          <p>Estamos preparando el resto del catálogo para que cada planta tenga su propio espacio de cuidado.</p>
-          <a class="button ghost" href="https://objetovivo.com.ar/shop/" target="_blank" rel="noopener">Ver colección actual ↗</a>
+      <a class="ov-feature-card" href="anturium-borgona.html">
+        <div class="ov-feature-image">
+          <img src="https://objetovivo.com.ar/wp-content/uploads/2026/06/22f54f61-b2d0-4607-a6c6-55fb208a594e-600x800.jpg" alt="Anturium Borgoña" />
         </div>
-      </div>
+        <div class="ov-feature-copy">
+          <p class="ov-kicker">INTERIOR · FLORACIÓN</p>
+          <h3>Anturium<br>Borgoña</h3>
+          <p>Follaje verde brillante, floración intensa y una presencia elegante para interiores luminosos.</p>
+          <span>Ver guía completa →</span>
+        </div>
+      </a>
     </section>
 
-    <section class="philosophy">
-      <p class="eyebrow light">OBJETO VIVO</p>
-      <h2>La naturaleza transforma un espacio.<br><em>El cuidado hace que perdure.</em></h2>
-      <p>Esta guía nace para acompañar la vida que elegiste llevar a tu casa.</p>
+    <section class="ov-philosophy">
+      <div>
+        <p class="ov-kicker">DECORACIÓN VIVA</p>
+        <h2>La naturaleza transforma un espacio.</h2>
+      </div>
+      <p>Esta guía extiende la experiencia de Objeto Vivo después de la compra: conocimiento, cuidado y acompañamiento para que cada planta siga formando parte de tu espacio.</p>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">
-      <span class="brand-name">OBJETO VIVO</span>
-      <span class="brand-sub">NATURALEZA &amp; DISEÑO</span>
+  <footer class="ov-footer">
+    <div class="footer-main">
+      <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">◒</span><span class="brand-copy"><span class="brand-name">Objeto Vivo</span><span class="brand-sub">NATURALEZA &amp; DISEÑO</span></span></div>
+      <div class="footer-contact"><p>Santa Fe, Argentina</p><a href="https://objetovivo.com.ar/" target="_blank" rel="noopener">objetovivo.com.ar ↗</a><a href="https://www.instagram.com/objetovivo_/" target="_blank" rel="noopener">@objetovivo_ ↗</a></div>
     </div>
-    <div class="footer-links">
-      <a href="https://objetovivo.com.ar/" target="_blank" rel="noopener">Sitio oficial ↗</a>
-      <a href="https://www.instagram.com/objetovivo_/" target="_blank" rel="noopener">Instagram ↗</a>
-    </div>
-    <p class="footer-note">Guía de cuidados · Santa Fe, Argentina</p>
+    <div class="footer-bottom"><span>Guía de cuidados · Objeto Vivo</span><span>Decoración viva para tus espacios.</span></div>
   </footer>
 </body>
 </html>
