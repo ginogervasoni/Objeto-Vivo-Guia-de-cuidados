@@ -1,0 +1,144 @@
+:root{
+  --green:#173f34;
+  --green-deep:#0f3028;
+  --sage:#dce4dc;
+  --cream:#f4f1e9;
+  --sand:#e7dfd1;
+  --ink:#1c2824;
+  --muted:#6e7771;
+  --white:#fffdf8;
+  --line:rgba(23,63,52,.16);
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"DM Sans",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:auto}
+.site-header{height:88px;padding:0 clamp(22px,5vw,72px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,253,248,.95);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-weight:600;letter-spacing:.18em;font-size:15px}
+.brand-sub{font-size:8px;letter-spacing:.26em;margin-top:8px;color:var(--muted)}
+.shop-link{font-size:13px;font-weight:500;border-bottom:1px solid var(--green);padding-bottom:3px}
+.eyebrow{font-size:11px;letter-spacing:.25em;font-weight:600;color:var(--green);margin:0 0 18px}
+.eyebrow.light{color:#d7e3db}
+h1,h2,h3,p{margin-top:0}
+h1,h2{font-family:var(--serif);font-weight:500;line-height:.98;letter-spacing:-.03em}
+h1{font-size:clamp(54px,7vw,104px);margin-bottom:28px}
+h2{font-size:clamp(42px,5vw,76px);margin-bottom:22px}
+h1 em,h2 em{font-weight:500}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:760px}
+.hero-copy{padding:clamp(76px,10vw,150px) clamp(28px,7vw,110px);display:flex;flex-direction:column;justify-content:center;background:var(--cream)}
+.hero-text{font-size:17px;max-width:580px;color:#46504b;margin-bottom:36px}
+.hero-image-wrap{position:relative;min-height:640px;background:#d5d8cf;overflow:hidden}
+.hero-image{height:100%;object-fit:cover}
+.image-note{position:absolute;bottom:24px;right:24px;background:rgba(255,253,248,.92);padding:12px 16px;font-family:var(--serif);font-style:italic;font-size:17px}
+.button{display:inline-flex;align-items:center;justify-content:center;width:max-content;padding:13px 20px;font-size:12px;letter-spacing:.08em;font-weight:500;transition:.2s ease}
+.button.primary{background:var(--green);color:white}
+.button.primary:hover{background:var(--green-deep);transform:translateY(-1px)}
+.button.ghost{border:1px solid var(--green);color:var(--green)}
+.intro-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.intro-strip div{padding:32px clamp(22px,4vw,58px);display:flex;gap:18px;align-items:flex-start;border-right:1px solid var(--line)}
+.intro-strip div:last-child{border-right:0}
+.intro-strip span{font-size:10px;font-weight:600;color:var(--green);padding-top:3px}
+.intro-strip p{font-family:var(--serif);font-size:21px;margin:0;line-height:1.2}
+.guides-section,.content-section,.related-section{padding:clamp(80px,10vw,150px) clamp(22px,7vw,110px)}
+.section-heading{max-width:700px}
+.plant-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;margin-top:56px}
+.plant-card{display:grid;grid-template-columns:1fr 1fr;background:var(--cream);min-height:520px}
+.plant-card-image{position:relative;overflow:hidden}
+.plant-card-image img{height:100%;object-fit:cover;transition:.45s ease}
+.plant-card:hover img{transform:scale(1.025)}
+.status{position:absolute;top:18px;left:18px;background:var(--white);padding:7px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
+.plant-card-copy{padding:44px;display:flex;flex-direction:column;justify-content:center}
+.plant-type{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.plant-card h3,.coming-soon h3,.related-card h3{font-family:var(--serif);font-size:38px;line-height:1.05;font-weight:500;margin-bottom:16px}
+.text-link{margin-top:24px;font-size:12px;font-weight:600;color:var(--green)}
+.coming-soon{background:var(--sage);padding:46px;display:flex;flex-direction:column;justify-content:center}
+.coming-soon .button{margin-top:20px}
+.philosophy{background:var(--green);color:white;text-align:center;padding:clamp(95px,12vw,180px) 22px}
+.philosophy h2{max-width:1000px;margin-left:auto;margin-right:auto}
+.philosophy p:last-child{max-width:570px;margin:24px auto 0;color:#d9e4dd}
+footer{background:#102a23;color:#eff4f0;padding:54px clamp(22px,7vw,110px);display:grid;grid-template-columns:1fr auto;gap:34px;align-items:end}
+.footer-brand{display:flex;flex-direction:column;line-height:1}
+.footer-brand .brand-sub{color:#abbcb3}
+.footer-links{display:flex;gap:26px;font-size:12px}
+.footer-note{grid-column:1/-1;margin:0;padding-top:26px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;color:#91a39a}
+.plant-hero{display:grid;grid-template-columns:1fr 1fr;background:var(--cream)}
+.plant-hero-image{min-height:720px}
+.plant-hero-image img{height:100%;object-fit:cover}
+.plant-hero-copy{padding:clamp(52px,8vw,120px);display:flex;flex-direction:column;justify-content:center}
+.back-link{font-size:11px;text-transform:uppercase;letter-spacing:.13em;margin-bottom:70px;color:var(--muted)}
+.latin{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted);margin-top:-14px;margin-bottom:30px}
+.quick-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:4px}
+.quick-tags span{border:1px solid var(--line);padding:7px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.09em}
+.quick-care{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quick-care article{padding:34px;border-right:1px solid var(--line)}
+.quick-care article:last-child{border-right:0}
+.quick-care h3{font-family:var(--serif);font-size:24px;font-weight:500;margin:8px 0}
+.quick-care p{font-size:13px;color:var(--muted);margin:0}
+.care-icon{font-size:21px;color:var(--green)}
+.two-col{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px}
+.sticky-heading{align-self:start;position:sticky;top:130px}
+.care-list{border-top:1px solid var(--line)}
+.care-block{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:30px 0;border-bottom:1px solid var(--line)}
+.care-block .number{font-size:10px;font-weight:600;color:var(--green);padding-top:6px}
+.care-block h3{font-family:var(--serif);font-weight:500;font-size:30px;margin-bottom:10px}
+.care-block p{color:#56605b;margin:0}
+.season-section{background:#edf0ea;padding:clamp(80px,10vw,150px) clamp(22px,7vw,110px)}
+.centered{text-align:center;margin:0 auto 54px}
+.centered>p:last-child{max-width:620px;margin:0 auto;color:var(--muted)}
+.season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.season-card{background:#fff;padding:32px;min-height:470px;display:flex;flex-direction:column}
+.season-mark{font-family:var(--serif);font-size:44px;color:#b6c0ba;line-height:1}
+.season-name{font-size:10px;letter-spacing:.2em;font-weight:600;color:var(--green);margin:24px 0 10px}
+.season-card h3{font-family:var(--serif);font-size:28px;font-weight:500;margin-bottom:16px}
+.season-card>p:not(.season-name){font-size:14px;color:#5d6762}
+.season-card ul{padding-left:17px;margin-top:auto;font-size:12px;color:#4f5b55}
+.season-card li{margin:8px 0}
+.problems-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.problem-list{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:var(--serif);font-size:26px}
+summary::-webkit-details-marker{display:none}
+summary b{font-family:var(--sans);font-weight:300;font-size:22px;transition:.2s}
+details[open] summary b{transform:rotate(45deg)}
+details p{color:var(--muted);max-width:760px;margin:16px 50px 4px 0}
+.note-section{margin:0 clamp(22px,7vw,110px) clamp(80px,10vw,150px);padding:36px 40px;background:var(--sand);display:grid;grid-template-columns:180px 1fr;gap:32px}
+.note-section p:last-child{margin:0;max-width:850px}
+.related-section{background:var(--cream)}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.related-card{background:#fff;padding-bottom:24px;transition:.2s}
+.related-card:hover{transform:translateY(-3px)}
+.related-placeholder{height:320px;background-size:cover;background-position:center}
+.botanical-one{background:linear-gradient(rgba(23,63,52,.05),rgba(23,63,52,.05)),url('https://objetovivo.com.ar/wp-content/uploads/2026/06/0fbe87b4-2c98-40d2-89a0-57de7e59af6a-600x800.jpg') center/cover}
+.botanical-two{background:linear-gradient(135deg,#d9e2d7,#b8c8b9)}
+.botanical-three{background:linear-gradient(135deg,#cbd3c7,#8fa291)}
+.related-card>p,.related-card>h3,.related-card>span{margin-left:24px;margin-right:24px}
+.related-card>p{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:22px;margin-bottom:7px}
+.related-card h3{font-size:30px;margin-bottom:14px}
+.related-card>span{font-size:11px;font-weight:600;color:var(--green)}
+.centered-button{margin:42px auto 0}
+@media(max-width:980px){
+  .hero,.plant-hero,.plant-grid,.two-col,.problems-section{grid-template-columns:1fr}
+  .hero{min-height:0}.hero-copy{padding-top:90px;padding-bottom:80px}.hero-image-wrap{min-height:560px}
+  .plant-hero-image{min-height:620px}.plant-hero-copy{padding-top:60px;padding-bottom:70px}.back-link{margin-bottom:42px}
+  .quick-care{grid-template-columns:repeat(2,1fr)}.quick-care article:nth-child(2){border-right:0}.quick-care article:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .sticky-heading{position:static}.season-grid{grid-template-columns:repeat(2,1fr)}
+  .note-section{grid-template-columns:1fr}.related-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .site-header{height:76px;padding:0 18px}.brand-name{font-size:13px}.brand-sub{font-size:7px}.shop-link{font-size:11px}
+  h1{font-size:52px}h2{font-size:43px}.hero-copy,.plant-hero-copy{padding-left:22px;padding-right:22px}
+  .home-hero .hero-image-wrap{min-height:470px}.plant-hero-image{min-height:520px;order:2}.plant-hero-copy{order:1}
+  .intro-strip{grid-template-columns:1fr}.intro-strip div{border-right:0;border-bottom:1px solid var(--line);padding:22px}.intro-strip div:last-child{border-bottom:0}
+  .guides-section,.content-section,.related-section,.season-section{padding-left:22px;padding-right:22px}
+  .plant-card{grid-template-columns:1fr}.plant-card-image{min-height:420px}.plant-card-copy,.coming-soon{padding:30px}
+  .quick-care{grid-template-columns:1fr 1fr}.quick-care article{padding:22px 18px}.quick-care p{font-size:12px}
+  .two-col,.problems-section{gap:40px}.care-block{grid-template-columns:38px 1fr}.care-block h3{font-size:26px}
+  .season-grid{grid-template-columns:1fr}.season-card{min-height:0}
+  .note-section{margin-left:22px;margin-right:22px;padding:28px}
+  .related-grid{grid-template-columns:1fr}.related-placeholder{height:360px}
+  footer{grid-template-columns:1fr}.footer-links{flex-direction:column;gap:12px}
+}
